@@ -3,10 +3,15 @@
 #import <UICollectionViewLeftAlignedLayout.h>
 
 static NSString * const kCellIdentifier = @"CellIdentifier";
+static BOOL kShouldRefresh = NO;
 
 @interface ExampleViewController () <UICollectionViewDataSource, UICollectionViewDelegateLeftAlignedLayout>
+
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (strong, nonatomic) NSTimer *timer;
+
 @end
 
 @implementation ExampleViewController
@@ -29,6 +34,18 @@ static NSString * const kCellIdentifier = @"CellIdentifier";
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kCellIdentifier];
 
     [self.view addSubview:self.collectionView];
+
+    if (kShouldRefresh) {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self.collectionView selector:@selector(reloadData) userInfo:nil repeats:YES];
+        [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+
+    [self.timer invalidate];
 }
 
 #pragma mark - UICollectionViewDataSource
