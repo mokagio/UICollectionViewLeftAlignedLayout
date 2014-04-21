@@ -1,0 +1,5 @@
+platform :ios
+
+target :Example do
+  pod 'UICollectionViewLeftAlignedLayout', :path => '../'
+end
