@@ -1,14 +1,20 @@
 PODS:
+  - OpenSans (1.0.0)
   - UICollectionViewLeftAlignedLayout (0.0.1)
+  - UIColor+FlatColors (0.0.1)
 
 DEPENDENCIES:
+  - OpenSans
   - UICollectionViewLeftAlignedLayout (from `../`)
+  - UIColor+FlatColors
 
 EXTERNAL SOURCES:
   UICollectionViewLeftAlignedLayout:
     :path: ../
 
 SPEC CHECKSUMS:
-  UICollectionViewLeftAlignedLayout: 08325f5827f870a8ffe18d93e6cdb1fff0a40fbe
+  OpenSans: ba92552b9df0333c4f4dab5c0105f55594a6cf9c
+  UICollectionViewLeftAlignedLayout: 609b48228c055467613760b7f729aeb705b91c56
+  UIColor+FlatColors: 417fbe0894c1da0e7ab6505e1409a26052caa75f
 
 COCOAPODS: 0.32.1

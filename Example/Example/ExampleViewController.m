@@ -1,6 +1,8 @@
 
 #import "ExampleViewController.h"
 #import <UICollectionViewLeftAlignedLayout.h>
+#import <UIColor+FlatColors.h>
+#import <UIFont+OpenSans.h>
 
 static NSString * const kCellIdentifier = @"CellIdentifier";
 static BOOL kShouldRefresh = NO;
@@ -26,6 +28,10 @@ static BOOL kShouldRefresh = NO;
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
+
+    self.titleLabel.font = [UIFont openSansFontOfSize:self.titleLabel.font.pointSize];
+    self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    self.titleLabel.textColor = [UIColor flatBelizeHoleColor];
 
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
@@ -64,7 +70,7 @@ static BOOL kShouldRefresh = NO;
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellIdentifier forIndexPath:indexPath];
 
-    cell.contentView.layer.borderColor = [UIColor blackColor].CGColor;
+    cell.contentView.layer.borderColor = [UIColor flatPeterRiverColor].CGColor;
     cell.contentView.layer.borderWidth = 2;
 
     return cell;
