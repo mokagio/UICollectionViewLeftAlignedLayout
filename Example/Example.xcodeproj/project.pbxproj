@@ -21,6 +21,7 @@
 		3F5E30E51905664000279D8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E30E31905664000279D8B /* InfoPlist.strings */; };
 		3F5E30E71905664000279D8B /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E30E61905664000279D8B /* ExampleTests.m */; };
 		3F5E30F11905693C00279D8B /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E30EF1905693C00279D8B /* ExampleViewController.m */; };
+		3F5E30F619056DC200279D8B /* ExampleViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E30F519056DC200279D8B /* ExampleViewController~iphone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		3F5E30E61905664000279D8B /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		3F5E30EE1905693C00279D8B /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
 		3F5E30EF1905693C00279D8B /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		3F5E30F519056DC200279D8B /* ExampleViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ExampleViewController~iphone.xib"; sourceTree = "<group>"; };
 		A6FE4E65791946C186EEB873 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0C7C8FC7EF499B967B14EF /* Pods-Example.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.xcconfig"; path = "Pods/Pods-Example.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 				3F5E30C81905663F00279D8B /* Supporting Files */,
 				3F5E30EE1905693C00279D8B /* ExampleViewController.h */,
 				3F5E30EF1905693C00279D8B /* ExampleViewController.m */,
+				3F5E30F519056DC200279D8B /* ExampleViewController~iphone.xib */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F5E30CC1905663F00279D8B /* InfoPlist.strings in Resources */,
+				3F5E30F619056DC200279D8B /* ExampleViewController~iphone.xib in Resources */,
 				3F5E30D41905663F00279D8B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
