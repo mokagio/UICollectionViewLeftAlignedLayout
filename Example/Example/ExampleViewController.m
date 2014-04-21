@@ -4,7 +4,7 @@
 
 static NSString * const kCellIdentifier = @"CellIdentifier";
 
-@interface ExampleViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface ExampleViewController () <UICollectionViewDataSource, UICollectionViewDelegateLeftAlignedLayout>
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @end
@@ -53,7 +53,7 @@ static NSString * const kCellIdentifier = @"CellIdentifier";
     return cell;
 }
 
-#pragma mark - UICollectionViewDelegateFlowLayout
+#pragma mark - UICollectionViewDelegateLeftAlignedLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
