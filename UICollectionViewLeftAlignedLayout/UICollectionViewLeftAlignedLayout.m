@@ -1,7 +1,6 @@
 
 #import "UICollectionViewLeftAlignedLayout.h"
 
-static const NSInteger kMaxCellSpacing = 9;
 
 @implementation UICollectionViewLeftAlignedLayout
 
