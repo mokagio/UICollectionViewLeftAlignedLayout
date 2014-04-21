@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                    It uses `UICollectionViewFlowLayout` under the hood.
                    DESC
   s.homepage     = "https://github.com/mokagio/UICollectionViewLeftAlignedLayout"
-  # s.screenshots  = "www.example.com/screenshots_1.gif"
+  s.screenshots  = "https://raw.githubusercontent.com/mokagio/UICollectionViewLeftAlignedLayout/master/screenshot.png"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Giovanni Lodi" => "giovanni.lodi42@gmail.com" }
   s.social_media_url   = "http://twitter.com/mokagio"
