@@ -83,9 +83,20 @@
     }
 
     CGRect frame = currentItemAttributes.frame;
-    frame.origin.x = previousFrameRightPoint + self.minimumInteritemSpacing;
+    frame.origin.x = previousFrameRightPoint + [self evaluatedMinimumInteritemSpacingForItemAtIndex:indexPath.row];
     currentItemAttributes.frame = frame;
     return currentItemAttributes;
+}
+
+- (CGFloat)evaluatedMinimumInteritemSpacingForItemAtIndex:(NSInteger)index
+{
+    if ([self.collectionView.delegate respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]) {
+        id<UICollectionViewDelegateLeftAlignedLayout> delegate = (id<UICollectionViewDelegateLeftAlignedLayout>)self.collectionView.delegate;
+
+        return [delegate collectionView:self.collectionView layout:self minimumInteritemSpacingForSectionAtIndex:index];
+    } else {
+        return self.minimumInteritemSpacing;
+    }
 }
 
 @end
