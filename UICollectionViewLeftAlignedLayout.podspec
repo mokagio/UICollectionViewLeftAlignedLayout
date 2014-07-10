@@ -1,4 +1,4 @@
-version = "0.0.1"
+version = "0.0.2"
 
 Pod::Spec.new do |s|
   s.name         = "UICollectionViewLeftAlignedLayout"
