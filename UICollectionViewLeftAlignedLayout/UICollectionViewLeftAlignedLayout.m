@@ -20,26 +20,13 @@
 
 #import "UICollectionViewLeftAlignedLayout.h"
 
-@interface UICollectionViewLayoutAttributes (LeftAligned)
-
-- (void)leftAlignFrame;
-
-@end
-
-@implementation UICollectionViewLayoutAttributes (LeftAligned)
-
-- (void)leftAlignFrame
-{
-    CGRect frame = self.frame;
-    frame.origin.x = 0;
-    self.frame = frame;
-}
-
-@end
-
-#pragma mark -
-
 @implementation UICollectionViewLeftAlignedLayout
+
+- (void)layoutAttributesAlignLeft:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    CGRect frame = layoutAttributes.frame;
+    frame.origin.x = self.sectionInset.left;
+    layoutAttributes.frame = frame;
+}
 
 #pragma mark - UICollectionViewLayout
 
@@ -58,9 +45,10 @@
     UICollectionViewLayoutAttributes* currentItemAttributes = [super layoutAttributesForItemAtIndexPath:indexPath];
 
     BOOL isFirstItemInSection = indexPath.item == 0;
+    CGFloat layoutWidth = CGRectGetWidth(self.collectionView.frame) - self.sectionInset.left - self.sectionInset.right;
 
     if (isFirstItemInSection) {
-        [currentItemAttributes leftAlignFrame];
+        [self layoutAttributesAlignLeft:currentItemAttributes];
         return currentItemAttributes;
     }
 
@@ -68,9 +56,9 @@
     CGRect previousFrame = [self layoutAttributesForItemAtIndexPath:previousIndexPath].frame;
     CGFloat previousFrameRightPoint = previousFrame.origin.x + previousFrame.size.width;
     CGRect currentFrame = currentItemAttributes.frame;
-    CGRect strecthedCurrentFrame = CGRectMake(0,
+    CGRect strecthedCurrentFrame = CGRectMake(self.sectionInset.left,
                                               currentFrame.origin.y,
-                                              self.collectionView.frame.size.width,
+                                              layoutWidth,
                                               currentFrame.size.height);
     // if the current frame, once left aligned to the left and stretched to the full collection view
     // widht intersects the previous frame then they are on the same line
@@ -78,7 +66,7 @@
 
     if (isFirstItemInRow) {
         // make sure the first item on a line is left aligned
-        [currentItemAttributes leftAlignFrame];
+        [self layoutAttributesAlignLeft:currentItemAttributes];
         return currentItemAttributes;
     }
 
