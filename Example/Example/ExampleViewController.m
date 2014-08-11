@@ -89,6 +89,11 @@ static BOOL kShouldRefresh = NO;
     return 5;
 }
 
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(10, 10, 10, 10);
+}
+
 #pragma mark -
 
 - (BOOL)prefersStatusBarHidden
