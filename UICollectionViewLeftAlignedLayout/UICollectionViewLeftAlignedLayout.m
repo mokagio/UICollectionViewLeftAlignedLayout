@@ -22,16 +22,16 @@
 
 @interface UICollectionViewLayoutAttributes (LeftAligned)
 
-- (void)leftAlignFrame;
+- (void)leftAlignFrameWithSectionInset:(UIEdgeInsets)sectionInset;
 
 @end
 
 @implementation UICollectionViewLayoutAttributes (LeftAligned)
 
-- (void)leftAlignFrame
+- (void)leftAlignFrameWithSectionInset:(UIEdgeInsets)sectionInset
 {
     CGRect frame = self.frame;
-    frame.origin.x = 0;
+    frame.origin.x = sectionInset.left;
     self.frame = frame;
 }
 
@@ -56,12 +56,13 @@
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewLayoutAttributes* currentItemAttributes = [super layoutAttributesForItemAtIndexPath:indexPath];
+    UIEdgeInsets sectionInset = [self evaluatedSectionInsetForItemAtIndex:indexPath.section];
 
     BOOL isFirstItemInSection = indexPath.item == 0;
-    CGFloat layoutWidth = CGRectGetWidth(self.collectionView.frame) - self.sectionInset.left - self.sectionInset.right;
+    CGFloat layoutWidth = CGRectGetWidth(self.collectionView.frame) - sectionInset.left - sectionInset.right;
 
     if (isFirstItemInSection) {
-        [currentItemAttributes leftAlignFrame];
+        [currentItemAttributes leftAlignFrameWithSectionInset:sectionInset];
         return currentItemAttributes;
     }
 
@@ -69,7 +70,7 @@
     CGRect previousFrame = [self layoutAttributesForItemAtIndexPath:previousIndexPath].frame;
     CGFloat previousFrameRightPoint = previousFrame.origin.x + previousFrame.size.width;
     CGRect currentFrame = currentItemAttributes.frame;
-    CGRect strecthedCurrentFrame = CGRectMake(self.sectionInset.left,
+    CGRect strecthedCurrentFrame = CGRectMake(sectionInset.left,
                                               currentFrame.origin.y,
                                               layoutWidth,
                                               currentFrame.size.height);
@@ -79,7 +80,7 @@
 
     if (isFirstItemInRow) {
         // make sure the first item on a line is left aligned
-        [currentItemAttributes leftAlignFrame];
+        [currentItemAttributes leftAlignFrameWithSectionInset:sectionInset];
         return currentItemAttributes;
     }
 
@@ -97,6 +98,17 @@
         return [delegate collectionView:self.collectionView layout:self minimumInteritemSpacingForSectionAtIndex:index];
     } else {
         return self.minimumInteritemSpacing;
+    }
+}
+
+- (UIEdgeInsets)evaluatedSectionInsetForItemAtIndex:(NSInteger)index
+{
+    if ([self.collectionView.delegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)]) {
+        id<UICollectionViewDelegateLeftAlignedLayout> delegate = (id<UICollectionViewDelegateLeftAlignedLayout>)self.collectionView.delegate;
+
+        return [delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:index];
+    } else {
+        return self.sectionInset;
     }
 }
 
