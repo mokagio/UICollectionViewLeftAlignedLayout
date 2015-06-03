@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OpenSans" "${PODS_ROOT}/Headers/Public/UICollectionViewLeftAlignedLayout" "${PODS_ROOT}/Headers/Public/UIColor+FlatColors"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/OpenSans" -isystem "${PODS_ROOT}/Headers/Public/UICollectionViewLeftAlignedLayout" -isystem "${PODS_ROOT}/Headers/Public/UIColor+FlatColors"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-Example-OpenSans" -l"Pods-Example-UICollectionViewLeftAlignedLayout" -l"Pods-Example-UIColor+FlatColors" -framework "CoreText" -framework "UIKit"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

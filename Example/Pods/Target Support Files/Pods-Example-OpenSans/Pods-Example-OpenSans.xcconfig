@@ -1,0 +1,1 @@
+PODS_EXAMPLE_OPENSANS_OTHER_LDFLAGS = -framework "CoreText" -framework "UIKit"

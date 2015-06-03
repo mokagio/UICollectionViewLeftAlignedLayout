@@ -1,0 +1,6 @@
+#include "Pods-Example-OpenSans.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/OpenSans" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OpenSans" "${PODS_ROOT}/Headers/Public/UICollectionViewLeftAlignedLayout" "${PODS_ROOT}/Headers/Public/UIColor+FlatColors"
+OTHER_LDFLAGS = ${PODS_EXAMPLE_OPENSANS_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES
