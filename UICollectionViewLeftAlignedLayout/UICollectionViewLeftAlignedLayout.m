@@ -44,18 +44,20 @@
 #pragma mark - UICollectionViewLayout
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
-    NSArray* attributesToReturn = [super layoutAttributesForElementsInRect:rect];
-    for (UICollectionViewLayoutAttributes* attributes in attributesToReturn) {
-        if (nil == attributes.representedElementKind) {
-            NSIndexPath* indexPath = attributes.indexPath;
-            attributes.frame = [self layoutAttributesForItemAtIndexPath:indexPath].frame;
+    NSMutableArray* attributesToReturn = [NSMutableArray array];
+    for (UICollectionViewLayoutAttributes* attributes in [super layoutAttributesForElementsInRect:rect]) {
+        UICollectionViewLayoutAttributes* attributesCopy = [attributes copy];
+        if (nil == attributesCopy.representedElementKind) {
+            NSIndexPath* indexPath = attributesCopy.indexPath;
+            attributesCopy.frame = [self layoutAttributesForItemAtIndexPath:indexPath].frame;
         }
+        [attributesToReturn addObject:attributesCopy];
     }
     return attributesToReturn;
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewLayoutAttributes* currentItemAttributes = [super layoutAttributesForItemAtIndexPath:indexPath];
+    UICollectionViewLayoutAttributes* currentItemAttributes = [[super layoutAttributesForItemAtIndexPath:indexPath] copy];
     UIEdgeInsets sectionInset = [self evaluatedSectionInsetForItemAtIndex:indexPath.section];
 
     BOOL isFirstItemInSection = indexPath.item == 0;
