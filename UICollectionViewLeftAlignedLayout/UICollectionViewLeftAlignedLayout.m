@@ -44,16 +44,16 @@
 #pragma mark - UICollectionViewLayout
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
-    NSMutableArray* attributesToReturn = [NSMutableArray array];
-    for (UICollectionViewLayoutAttributes* attributes in [super layoutAttributesForElementsInRect:rect]) {
-        UICollectionViewLayoutAttributes* attributesCopy = [attributes copy];
-        if (nil == attributesCopy.representedElementKind) {
-            NSIndexPath* indexPath = attributesCopy.indexPath;
-            attributesCopy.frame = [self layoutAttributesForItemAtIndexPath:indexPath].frame;
+    NSArray *originalAttributes = [super layoutAttributesForElementsInRect:rect];
+    NSMutableArray *updatedAttributes = [NSMutableArray arrayWithArray:originalAttributes];
+    for (UICollectionViewLayoutAttributes *attributes in originalAttributes) {
+        if (!attributes.representedElementKind) {
+            NSUInteger index = [updatedAttributes indexOfObject:attributes];
+            updatedAttributes[index] = [self layoutAttributesForItemAtIndexPath:attributes.indexPath];
         }
-        [attributesToReturn addObject:attributesCopy];
     }
-    return attributesToReturn;
+
+    return updatedAttributes;
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
