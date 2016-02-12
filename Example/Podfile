@@ -1,7 +1,0 @@
-platform :ios, "6.0"
-
-target :Example do
-  pod 'UICollectionViewLeftAlignedLayout', :path => '..'
-  pod 'OpenSans'
-  pod 'UIColor+FlatColors'
-end

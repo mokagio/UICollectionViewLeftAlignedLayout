@@ -1,8 +1,36 @@
-
 #import "ExampleViewController.h"
-#import <UICollectionViewLeftAlignedLayout.h>
-#import <UIColor+FlatColors.h>
-#import <UIFont+OpenSans.h>
+
+@interface UIColor (NiceColors)
+
++ (UIColor *)flatBelizeHoleColor;
+
++ (UIColor *)flatPeterRiverColor;
+
+@end
+
+@implementation UIColor (NiceColors)
+
++ (UIColor *)flatBelizeHoleColor
+{
+    return [UIColor colorWithRed:0.1607843137254902
+                           green:0.5019607843137255
+                            blue:0.7254901960784313
+                           alpha:1];
+}
+
++ (UIColor *)flatPeterRiverColor
+{
+    return [UIColor colorWithRed:0.20392156862745098
+                           green:0.596078431372549
+                            blue:0.8588235294117647
+                           alpha:1];
+}
+
+@end
+
+#pragma mark -
+
+@import UICollectionViewLeftAlignedLayout;
 
 static NSString * const kCellIdentifier = @"CellIdentifier";
 static BOOL kShouldRefresh = NO;
@@ -29,7 +57,6 @@ static BOOL kShouldRefresh = NO;
 
     self.view.backgroundColor = [UIColor whiteColor];
 
-    self.titleLabel.font = [UIFont openSansFontOfSize:self.titleLabel.font.pointSize];
     self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     self.titleLabel.textColor = [UIColor flatBelizeHoleColor];
 
