@@ -3,8 +3,6 @@
 set -e
 set -o pipefail
 
-bundle install
-
 cd CocoaPodsTest
 bundle exec pod install
 cd ..

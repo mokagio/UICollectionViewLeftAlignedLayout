@@ -3,8 +3,6 @@
 set -e
 set -o pipefail
 
-bundle install
-
 cd CarthageTest
 carthage bootstrap
 cd ..
