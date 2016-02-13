@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UICollectionViewLeftAlignedLayout
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

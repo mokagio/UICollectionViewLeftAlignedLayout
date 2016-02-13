@@ -8,20 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		3F4E2BF61C6E67B500AD5BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E2BF51C6E67B500AD5BCA /* AppDelegate.swift */; };
-		3F4E2BF81C6E67B500AD5BCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E2BF71C6E67B500AD5BCA /* ViewController.swift */; };
 		3F4E2BFB1C6E67B500AD5BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4E2BF91C6E67B500AD5BCA /* Main.storyboard */; };
 		3F4E2BFD1C6E67B500AD5BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4E2BFC1C6E67B500AD5BCA /* Assets.xcassets */; };
 		3F4E2C001C6E67B500AD5BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4E2BFE1C6E67B500AD5BCA /* LaunchScreen.storyboard */; };
+		3F4E2C261C6F2E9900AD5BCA /* UICollectionViewLeftAlignedLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4E2C251C6F2E9900AD5BCA /* UICollectionViewLeftAlignedLayout.framework */; };
+		3F4E2C271C6F2E9900AD5BCA /* UICollectionViewLeftAlignedLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4E2C251C6F2E9900AD5BCA /* UICollectionViewLeftAlignedLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F4E2C281C6F2E9900AD5BCA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F4E2C271C6F2E9900AD5BCA /* UICollectionViewLeftAlignedLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3F4E2BF21C6E67B500AD5BCA /* CarthageTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4E2BF51C6E67B500AD5BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F4E2BF71C6E67B500AD5BCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F4E2BFA1C6E67B500AD5BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F4E2BFC1C6E67B500AD5BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F4E2BFF1C6E67B500AD5BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F4E2C011C6E67B500AD5BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4E2C251C6F2E9900AD5BCA /* UICollectionViewLeftAlignedLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICollectionViewLeftAlignedLayout.framework; path = Carthage/Build/iOS/UICollectionViewLeftAlignedLayout.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4E2C261C6F2E9900AD5BCA /* UICollectionViewLeftAlignedLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +54,7 @@
 		3F4E2BE91C6E67B500AD5BCA = {
 			isa = PBXGroup;
 			children = (
+				3F4E2C251C6F2E9900AD5BCA /* UICollectionViewLeftAlignedLayout.framework */,
 				3F4E2BF41C6E67B500AD5BCA /* CarthageTest */,
 				3F4E2BF31C6E67B500AD5BCA /* Products */,
 			);
@@ -55,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				3F4E2BF51C6E67B500AD5BCA /* AppDelegate.swift */,
-				3F4E2BF71C6E67B500AD5BCA /* ViewController.swift */,
 				3F4E2BF91C6E67B500AD5BCA /* Main.storyboard */,
 				3F4E2BFC1C6E67B500AD5BCA /* Assets.xcassets */,
 				3F4E2BFE1C6E67B500AD5BCA /* LaunchScreen.storyboard */,
@@ -74,6 +90,7 @@
 				3F4E2BEE1C6E67B500AD5BCA /* Sources */,
 				3F4E2BEF1C6E67B500AD5BCA /* Frameworks */,
 				3F4E2BF01C6E67B500AD5BCA /* Resources */,
+				3F4E2C281C6F2E9900AD5BCA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,7 +152,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F4E2BF81C6E67B500AD5BCA /* ViewController.swift in Sources */,
 				3F4E2BF61C6E67B500AD5BCA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +265,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.CarthageTest;
@@ -260,6 +280,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CarthageTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.CarthageTest;
@@ -286,6 +310,7 @@
 				3F4E2C061C6E67B500AD5BCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
