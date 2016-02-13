@@ -1,0 +1,7 @@
+lnguage: objective-c
+osx_image: xcode7.2
+
+script:
+  - cd Test-Integration
+  - ./test-carthage.sh
+  - ./test-cocoapods.sh
