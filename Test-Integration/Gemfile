@@ -1,3 +1,8 @@
 source "https://rubygems.org"
 
 gem "xcpretty"
+# TODO: We're using this beta becaues the latest stable has a bug with Ruby 2.3
+# See https://github.com/CocoaPods/CocoaPods/issues/4345
+# It would be greate to remove the version spec so that we can always test with
+# the latest stable
+gem "cocoapods", "~> 1.0.0.beta.1"
