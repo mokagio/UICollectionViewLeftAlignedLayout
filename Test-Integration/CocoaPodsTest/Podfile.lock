@@ -1,0 +1,12 @@
+PODS:
+  - UICollectionViewLeftAlignedLayout (1.0.2)
+
+DEPENDENCIES:
+  - UICollectionViewLeftAlignedLayout
+
+SPEC CHECKSUMS:
+  UICollectionViewLeftAlignedLayout: 830bf6fa5bab9f9b464f62e3384f9d2e00b3c0f6
+
+PODFILE CHECKSUM: 7548866b04c906c9dfa5c80a9db1f7a51fe66c57
+
+COCOAPODS: 1.0.0.beta.3
