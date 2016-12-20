@@ -21,7 +21,7 @@ Simply set `UICollectionViewLeftAlignedLayout` as the layout object for your col
 
 ```objc
 CGRect frame = ...
-UICollectionViewLeftAlignedLayout *layout = [UICollectionViewLeftAlignedLayout alloc] init];
+UICollectionViewLeftAlignedLayout *layout = [[UICollectionViewLeftAlignedLayout alloc] init];
 UICollectionView *leftAlignedCollectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:layout];
 ```
 
