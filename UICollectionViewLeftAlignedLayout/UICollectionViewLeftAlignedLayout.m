@@ -87,7 +87,16 @@
     }
 
     CGRect frame = currentItemAttributes.frame;
-    frame.origin.x = previousFrameRightPoint + [self evaluatedMinimumInteritemSpacingForSectionAtIndex:indexPath.section];
+  
+    CGFloat originX=previousFrameRightPoint + [self evaluatedMinimumInteritemSpacingForSectionAtIndex:indexPath.section];
+    if (originX>=[UIScreen mainScreen].bounds.size.width) {
+        frame.origin.x=[self evaluatedMinimumInteritemSpacingForSectionAtIndex:indexPath.section];
+    }
+    else
+    {
+        frame.origin.x =originX;
+    }
+
     currentItemAttributes.frame = frame;
     return currentItemAttributes;
 }
