@@ -1,18 +1,25 @@
-UICollectionView Left Aligned Layout
-====================================
+# UICollectionView Left Aligned Layout
 
-A `UICollectionViewLayout` implementation that aligns the cells to the left. 
+A `UICollectionViewLayout` implementation that aligns the cells to the left.
 
 <img src="https://raw.githubusercontent.com/mokagio/UICollectionViewLeftAlignedLayout/master/screenshot.png" />
 
 _Check out the twin project [`UICollectionViewRightAlignedLayout`](https://github.com/mokagio/UICollectionViewRightAlignedLayout)_
 
-## Installation with CocoaPods
+## Installation
+
+## CocoaPods
 
 ```ruby
-platform :ios, '6.0'
+platform :ios, '8.0'
+use_frameworks!
 
 pod 'UICollectionViewLeftAlignedLayout'
+```
+
+## Carthage
+```
+github "mokagio/UICollectionViewLeftAlignedLayout"
 ```
 
 ## Usage
