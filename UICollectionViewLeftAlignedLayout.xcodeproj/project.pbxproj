@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E42CF881F0475C600B93DE0 /* UICollectionViewLeftAlignedLayoutSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42CF871F0475C600B93DE0 /* UICollectionViewLeftAlignedLayoutSwift.swift */; };
 		CE70D2CF1C5D982A00C57988 /* UICollectionViewLeftAlignedLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CE70D2CE1C5D982A00C57988 /* UICollectionViewLeftAlignedLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE70D2D71C5D988900C57988 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE70D2D61C5D988900C57988 /* UICollectionViewLeftAlignedLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E42CF871F0475C600B93DE0 /* UICollectionViewLeftAlignedLayoutSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewLeftAlignedLayoutSwift.swift; sourceTree = "<group>"; };
 		CE70D2CB1C5D982A00C57988 /* UICollectionViewLeftAlignedLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICollectionViewLeftAlignedLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE70D2CE1C5D982A00C57988 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
 		CE70D2D01C5D982A00C57988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,8 +50,9 @@
 		CE70D2CD1C5D982A00C57988 /* UICollectionViewLeftAlignedLayout */ = {
 			isa = PBXGroup;
 			children = (
-				CE70D2D61C5D988900C57988 /* UICollectionViewLeftAlignedLayout.m */,
 				CE70D2CE1C5D982A00C57988 /* UICollectionViewLeftAlignedLayout.h */,
+				CE70D2D61C5D988900C57988 /* UICollectionViewLeftAlignedLayout.m */,
+				7E42CF871F0475C600B93DE0 /* UICollectionViewLeftAlignedLayoutSwift.swift */,
 				CE70D2D01C5D982A00C57988 /* Info.plist */,
 			);
 			path = UICollectionViewLeftAlignedLayout;
@@ -97,6 +100,7 @@
 				TargetAttributes = {
 					CE70D2CA1C5D982A00C57988 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E42CF881F0475C600B93DE0 /* UICollectionViewLeftAlignedLayoutSwift.swift in Sources */,
 				CE70D2D71C5D988900C57988 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +235,7 @@
 		CE70D2D41C5D982A00C57988 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -241,12 +247,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.UICollectionViewLeftAlignedLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CE70D2D51C5D982A00C57988 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -258,6 +267,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mokagio.UICollectionViewLeftAlignedLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
