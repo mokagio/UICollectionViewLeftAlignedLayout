@@ -77,7 +77,7 @@
                                               layoutWidth,
                                               currentFrame.size.height);
     // if the current frame, once left aligned to the left and stretched to the full collection view
-    // widht intersects the previous frame then they are on the same line
+    // width intersects the previous frame then they are on the same line
     BOOL isFirstItemInRow = !CGRectIntersectsRect(previousFrame, strecthedCurrentFrame);
 
     if (isFirstItemInRow) {
