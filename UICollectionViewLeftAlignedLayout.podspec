@@ -1,4 +1,4 @@
-version = "1.0.2"
+version = "1.0.3"
 
 Pod::Spec.new do |s|
   s.name         = "UICollectionViewLeftAlignedLayout"
@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Giovanni Lodi" => "giovanni.lodi42@gmail.com" }
   s.social_media_url   = "http://twitter.com/mokagio"
-  s.platform     = :ios, "6.0"
+  s.platform     = :ios, "10.0"
   s.source       = { :git => "https://github.com/mokagio/UICollectionViewLeftAlignedLayout.git", :tag => version }
-  s.source_files  = "UICollectionViewLeftAlignedLayout"
+  s.source_files  = "UICollectionViewAlignedLayout"
   s.requires_arc = true
 end
