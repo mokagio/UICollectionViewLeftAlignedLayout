@@ -57,7 +57,14 @@
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewLayoutAttributes* currentItemAttributes = [super layoutAttributesForItemAtIndexPath:indexPath];
+    UICollectionViewLayoutAttributes* currentItemAttributes;
+
+    if (UIDevice.currentDevice.systemVersion.floatValue < 10.0) {
+        currentItemAttributes = [super layoutAttributesForItemAtIndexPath:indexPath];
+    } else {
+        currentItemAttributes = [[super layoutAttributesForItemAtIndexPath:indexPath] copy];
+    }
+
     UIEdgeInsets sectionInset = [self evaluatedSectionInsetForItemAtIndex:indexPath.section];
 
     BOOL isFirstItemInSection = indexPath.item == 0;
