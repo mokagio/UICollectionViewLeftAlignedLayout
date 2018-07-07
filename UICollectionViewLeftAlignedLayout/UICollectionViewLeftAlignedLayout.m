@@ -59,10 +59,10 @@
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewLayoutAttributes* currentItemAttributes;
 
-    if (UIDevice.currentDevice.systemVersion.floatValue < 10.0) {
-        currentItemAttributes = [super layoutAttributesForItemAtIndexPath:indexPath];
-    } else {
+    if (@available(iOS 10, *)) {
         currentItemAttributes = [[super layoutAttributesForItemAtIndexPath:indexPath] copy];
+    } else {
+        currentItemAttributes = [super layoutAttributesForItemAtIndexPath:indexPath];
     }
 
     UIEdgeInsets sectionInset = [self evaluatedSectionInsetForItemAtIndex:indexPath.section];
