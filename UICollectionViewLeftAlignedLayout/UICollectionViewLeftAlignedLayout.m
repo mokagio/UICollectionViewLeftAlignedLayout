@@ -73,7 +73,7 @@
     CGFloat previousFrameRightPoint = previousFrame.origin.x + previousFrame.size.width;
     CGRect currentFrame = currentItemAttributes.frame;
     CGRect strecthedCurrentFrame = CGRectMake(sectionInset.left,
-                                              currentFrame.origin.y,
+                                              currentFrame.origin.y + FLT_EPSILON,
                                               layoutWidth,
                                               currentFrame.size.height);
     // if the current frame, once left aligned to the left and stretched to the full collection view
