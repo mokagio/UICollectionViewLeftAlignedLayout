@@ -29,6 +29,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63F15DE32926767F00D5FFA0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CE70D2CE1C5D982A00C57988 /* UICollectionViewLeftAlignedLayout.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		63F15DE42926778600D5FFA0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CE70D2D61C5D988900C57988 /* UICollectionViewLeftAlignedLayout.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		CE70D2C11C5D982A00C57988 = {
 			isa = PBXGroup;
 			children = (
@@ -48,8 +64,8 @@
 		CE70D2CD1C5D982A00C57988 /* UICollectionViewLeftAlignedLayout */ = {
 			isa = PBXGroup;
 			children = (
-				CE70D2D61C5D988900C57988 /* UICollectionViewLeftAlignedLayout.m */,
-				CE70D2CE1C5D982A00C57988 /* UICollectionViewLeftAlignedLayout.h */,
+				63F15DE32926767F00D5FFA0 /* include */,
+				63F15DE42926778600D5FFA0 /* Sources */,
 				CE70D2D01C5D982A00C57988 /* Info.plist */,
 			);
 			path = UICollectionViewLeftAlignedLayout;
@@ -105,6 +121,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CE70D2C11C5D982A00C57988;
