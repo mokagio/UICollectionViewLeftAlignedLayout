@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Giovanni Lodi" => "giovanni.lodi42@gmail.com" }
   s.social_media_url   = "http://twitter.com/mokagio"
-  s.platform     = :ios, "6.0"
+  s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/mokagio/UICollectionViewLeftAlignedLayout.git", :tag => version }
   s.source_files  = 'UICollectionViewLeftAlignedLayout/**/*.{h,m}'
   s.framework = 'UIKit'
