@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/mokagio"
   s.platform     = :ios, "6.0"
   s.source       = { :git => "https://github.com/mokagio/UICollectionViewLeftAlignedLayout.git", :tag => version }
-  s.source_files  = "UICollectionViewLeftAlignedLayout"
+  s.source_files  = 'UICollectionViewLeftAlignedLayout/**/*.{h,m}'
+  s.framework = 'UIKit'
   s.requires_arc = true
 end
