@@ -1,6 +1,6 @@
 
 #import "ExampleViewController.h"
-#import <UICollectionViewLeftAlignedLayout.h>
+@import UICollectionViewLeftAlignedLayout;
 #import <UIColor+FlatColors.h>
 #import <UIFont+OpenSans.h>
 
