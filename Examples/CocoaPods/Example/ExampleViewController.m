@@ -29,7 +29,13 @@ static BOOL kShouldRefresh = NO;
 
     self.view.backgroundColor = [UIColor whiteColor];
 
-    self.titleLabel.font = [UIFont openSansFontOfSize:self.titleLabel.font.pointSize];
+    // Getting
+    //
+    // > Terminating app due to uncaught exception 'NSInvalidArgumentException',
+    // > reason: '*** -[NSBundle initWithURL:]: nil URL argument'
+    //
+    // at some point when loading the font via the pod
+//    self.titleLabel.font = [UIFont openSansFontOfSize:self.titleLabel.font.pointSize];
     self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     self.titleLabel.textColor = [UIColor flatBelizeHoleColor];
 
