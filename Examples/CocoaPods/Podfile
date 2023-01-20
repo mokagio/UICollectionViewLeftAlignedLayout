@@ -1,0 +1,9 @@
+platform :ios, "11.0"
+
+use_frameworks!
+
+target :Example do
+  pod 'UICollectionViewLeftAlignedLayout', :path => '../..'
+  pod 'OpenSans'
+  pod 'UIColor+FlatColors'
+end

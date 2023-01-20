@@ -1,0 +1,1154 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071DDC73DF7F0B807ADA66F16F3A96B5 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B8FD700DACE8AF6A3ED74717A78EEEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74D207BDA239A25C1380A816F90FF59 /* UIKit.framework */; };
+		3484C679E38A7125DB3FF396245DCD02 /* OpenSans-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5AFEE087580BE5FDBF29443C4B2F750 /* OpenSans-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DAD0557DF8E0449EC779CBAC97B5BB9 /* UIColor+FlatColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 3343193E1CCE05EE68EC191458664F7A /* UIColor+FlatColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A500991076F7B0821B11373024B7E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF26CFF1E862548F8E456C64372DC06 /* Foundation.framework */; };
+		4C8B0624D371A190CE4B069C429C82EA /* UIFont+OpenSans.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CD48FCE02E1BAEFB8FB04A2BA3EF4B /* UIFont+OpenSans.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5795B28F12D016A68532DBDB74151894 /* UICollectionViewLeftAlignedLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D6E7249CBD3D2ADE67D9D67B42DD2F3A /* UICollectionViewLeftAlignedLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623F0EEF6B493FA2CC3444C6757AE532 /* UIFont+OpenSans.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B94EFC7123046E51EA97A4AE2AD366 /* UIFont+OpenSans.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C1B16E0E6DEF7B40381B26B01A70AC /* UIColor+FlatColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0D616296BACC14817051AFCB14CE91 /* UIColor+FlatColors-dummy.m */; };
+		657E0BD0B34A889C34420FF45C6E1905 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DFADE8C42D6E3C19FE8FDF5908DFECF /* OpenSans-Italic.ttf */; };
+		6A3CE2308A6B5219DA2614184037E4BF /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA76860B506E69F08B0B154D70C038E /* CoreText.framework */; };
+		6B3EDFE1EF75734AB54463F6F91AEAE0 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = C87FC81E91D191769493B4BB50509AC8 /* UIColor+FlatColors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6C05A63DB53A81BB8A2DB99F8DB77944 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 571623CCF839D93A52DEB39450ABEE7E /* OpenSans-ExtraBold.ttf */; };
+		6D9927CB01717CBBD14892EE89F4DEC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF26CFF1E862548F8E456C64372DC06 /* Foundation.framework */; };
+		7C0454C9C7A384C5F761961CD6C45827 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A89527F29A6A86C3969C63058CA99348 /* OpenSans-BoldItalic.ttf */; };
+		7FFB66B82589C1DD8AFAE0A3B2BCA90C /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCBE029EAB0EF0B47A98A5F8FAB5132E /* OpenSans-LightItalic.ttf */; };
+		84CB1080B796EDCA15994078393E6BCC /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */; };
+		990BF31958AEDEF7089175C0E3354512 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6298CFC8665A74BADA244ED9D759357 /* OpenSans-ExtraBoldItalic.ttf */; };
+		992BBE6C0A9B0E7F35F54B8A04F05B39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF26CFF1E862548F8E456C64372DC06 /* Foundation.framework */; };
+		9A31BF7EB81151E0DC6A1372FC5FE4DE /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB100F774B5E3D21D1C9E8B06B40DDD2 /* OpenSans-Regular.ttf */; };
+		9BD6DEB16AEBEB66FF8C154748A110E5 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4C1F3BD6105EEBA056FC7BD6C894DEB /* OpenSans-SemiboldItalic.ttf */; };
+		B59893F6C67EE9CFA297B574041C37A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74D207BDA239A25C1380A816F90FF59 /* UIKit.framework */; };
+		B94C4D4853A8E91DC1A614BFD9BB7D4A /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A28300C99F9AC417D8EE632BE9E6C3A /* UICollectionViewLeftAlignedLayout.m */; };
+		BB7541B9A900EDC6B2EE1EE7C6EB6BC6 /* UIColor+FlatColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EE31FB60C345C43E4F84F5E5D4097D /* UIColor+FlatColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8DE09AAFC30F82063498CE0698F946F /* OpenSans-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 318B68AFC2527F596E00E04D01C089CA /* OpenSans-dummy.m */; };
+		CE550D88EAC087B04AB7ED2429C9D367 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E979EB87466C60DEED35D88665D6B92 /* OpenSans-Bold.ttf */; };
+		DBBEE0B0DC2AECE55F6AFF982B612E9D /* OpenSans-OpenSans in Resources */ = {isa = PBXBuildFile; fileRef = 95244E634CD25D6FAFBE86E6504426B3 /* OpenSans-OpenSans */; };
+		DBEDA3C3FD72FD53C03F699D044F505E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF26CFF1E862548F8E456C64372DC06 /* Foundation.framework */; };
+		DE71C22B3B77718A4FAC198B6E835E0E /* UICollectionViewLeftAlignedLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 617C33C9228E0BB16E18587461DD10EF /* UICollectionViewLeftAlignedLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7F5191B7F7120FB3AF97B2E3471FC59 /* UICollectionViewLeftAlignedLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9519BC21C948FBE1C4D6EFEE874DAA7F /* UICollectionViewLeftAlignedLayout-dummy.m */; };
+		EE8A28C7B7C938A9B32072DB99925E7C /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCDC922C92457E10A8217F9CA7305660 /* OpenSans-Semibold.ttf */; };
+		FB158041136A580A50F77F1ABC43EC52 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F24DBDACB87DB6FA4A4456C3D89E340 /* OpenSans-Light.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		274FF763F1C0F55579A4501E0F96152A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D2C062A8FB1A5905A7A79E46FB5EC44;
+			remoteInfo = OpenSans;
+		};
+		2EA216675343B90BE27458869A999E12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC855F6CF68A0E53B44765DF68F5A1BB;
+			remoteInfo = UICollectionViewLeftAlignedLayout;
+		};
+		8CC546101A4E046CCB7B79E5039A0648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBF5D92DF7C222FC14A9F2D2E3A1FECB;
+			remoteInfo = "UIColor+FlatColors";
+		};
+		95F090CBE402243A8D2C15FCD40CE307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 866AA0434270D3C9C6572C4650E1A7A8;
+			remoteInfo = "OpenSans-OpenSans";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		028D42D8FF1F9BBE313F79950876A242 /* UIColor+FlatColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UIColor+FlatColors.modulemap"; sourceTree = "<group>"; };
+		079CF76BC5BED2A91C4668153D9447BC /* UICollectionViewLeftAlignedLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICollectionViewLeftAlignedLayout.release.xcconfig; sourceTree = "<group>"; };
+		07CD48FCE02E1BAEFB8FB04A2BA3EF4B /* UIFont+OpenSans.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIFont+OpenSans.m"; sourceTree = "<group>"; };
+		0A28300C99F9AC417D8EE632BE9E6C3A /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
+		150D15DADFFB2DDD2AAA62A205133DFC /* OpenSans */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OpenSans; path = OpenSans.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		167A533EDA3D4225D2FF02EE2DC2432D /* OpenSans.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenSans.debug.xcconfig; sourceTree = "<group>"; };
+		1F667CC0E19EAF34E5A4119E2121F585 /* Pods-Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Example"; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		204756DB97637304E5F0FEA2A59CA9D8 /* UIColor+FlatColors */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "UIColor+FlatColors"; path = UIColor_FlatColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		2DF26CFF1E862548F8E456C64372DC06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		318B68AFC2527F596E00E04D01C089CA /* OpenSans-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpenSans-dummy.m"; sourceTree = "<group>"; };
+		31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Info.plist"; sourceTree = "<group>"; };
+		3343193E1CCE05EE68EC191458664F7A /* UIColor+FlatColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+FlatColors.h"; path = "UIColor+FlatColors/UIColor+FlatColors.h"; sourceTree = "<group>"; };
+		35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4479BEC900C16D8DA53CBA67852716EE /* OpenSans-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OpenSans-Info.plist"; sourceTree = "<group>"; };
+		45E8AE014EF2541AFBEF79944E6A9942 /* UIColor+FlatColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+FlatColors.debug.xcconfig"; sourceTree = "<group>"; };
+		4994F5FA05C6ABC79006F620B33FEEAA /* UICollectionViewLeftAlignedLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UICollectionViewLeftAlignedLayout-Info.plist"; sourceTree = "<group>"; };
+		4A814427737E03EB24C323B10836E583 /* UICollectionViewLeftAlignedLayout */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UICollectionViewLeftAlignedLayout; path = UICollectionViewLeftAlignedLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		571623CCF839D93A52DEB39450ABEE7E /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-ExtraBold.ttf"; path = "Fonts/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5BA17910AB55D5C494F126451142F52B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5F24DBDACB87DB6FA4A4456C3D89E340 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Light.ttf"; path = "Fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		6097E517FDB93C7919BAEED2EF4FA75C /* OpenSans.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenSans.release.xcconfig; sourceTree = "<group>"; };
+		617C33C9228E0BB16E18587461DD10EF /* UICollectionViewLeftAlignedLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewLeftAlignedLayout-umbrella.h"; sourceTree = "<group>"; };
+		66689B33AC591AAA4EC53B9B9330C22F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6D67F592A69C5E39EA78F6292AE09A10 /* UICollectionViewLeftAlignedLayout.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = UICollectionViewLeftAlignedLayout.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6E979EB87466C60DEED35D88665D6B92 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Bold.ttf"; path = "Fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		7771A7A7DF1569282F993E9884DD36D2 /* OpenSans-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenSans-prefix.pch"; sourceTree = "<group>"; };
+		77BAB6169792F49FAF2FBC1E0B03CA15 /* ResourceBundle-OpenSans-OpenSans-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OpenSans-OpenSans-Info.plist"; sourceTree = "<group>"; };
+		7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
+		79CD2AEDAF551BE46E321E4E305F811B /* UIColor+FlatColors-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIColor+FlatColors-Info.plist"; sourceTree = "<group>"; };
+		8C0D616296BACC14817051AFCB14CE91 /* UIColor+FlatColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColors-dummy.m"; sourceTree = "<group>"; };
+		9276E3F2A126FD37A541EA0057299335 /* UIColor+FlatColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor+FlatColors.release.xcconfig"; sourceTree = "<group>"; };
+		9519BC21C948FBE1C4D6EFEE874DAA7F /* UICollectionViewLeftAlignedLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewLeftAlignedLayout-dummy.m"; sourceTree = "<group>"; };
+		95244E634CD25D6FAFBE86E6504426B3 /* OpenSans-OpenSans */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "OpenSans-OpenSans"; path = OpenSans.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B94EFC7123046E51EA97A4AE2AD366 /* UIFont+OpenSans.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIFont+OpenSans.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DFADE8C42D6E3C19FE8FDF5908DFECF /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Italic.ttf"; path = "Fonts/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		A5B0FE368A3C93C1388234B3067EE4B9 /* UICollectionViewLeftAlignedLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewLeftAlignedLayout-prefix.pch"; sourceTree = "<group>"; };
+		A89527F29A6A86C3969C63058CA99348 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-BoldItalic.ttf"; path = "Fonts/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		ABBAF89B448506E62EF0CFF7B8C9220F /* UICollectionViewLeftAlignedLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UICollectionViewLeftAlignedLayout.modulemap; sourceTree = "<group>"; };
+		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
+		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B6298CFC8665A74BADA244ED9D759357 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-ExtraBoldItalic.ttf"; path = "Fonts/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		BB100F774B5E3D21D1C9E8B06B40DDD2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Regular.ttf"; path = "Fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		C5AFEE087580BE5FDBF29443C4B2F750 /* OpenSans-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenSans-umbrella.h"; sourceTree = "<group>"; };
+		C7FE671522D93C89BA2600CE6AB0364A /* UICollectionViewLeftAlignedLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICollectionViewLeftAlignedLayout.debug.xcconfig; sourceTree = "<group>"; };
+		C87FC81E91D191769493B4BB50509AC8 /* UIColor+FlatColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FlatColors.m"; path = "UIColor+FlatColors/UIColor+FlatColors.m"; sourceTree = "<group>"; };
+		CC58FEE06CB416FA0D1EA3267F888EA3 /* OpenSans.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OpenSans.modulemap; sourceTree = "<group>"; };
+		CFA76860B506E69F08B0B154D70C038E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
+		D6E7249CBD3D2ADE67D9D67B42DD2F3A /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
+		D7EE31FB60C345C43E4F84F5E5D4097D /* UIColor+FlatColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors-umbrella.h"; sourceTree = "<group>"; };
+		E4C1F3BD6105EEBA056FC7BD6C894DEB /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-SemiboldItalic.ttf"; path = "Fonts/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		E74D207BDA239A25C1380A816F90FF59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F136BFE95CE3A9D3C49C590DA4EEC6C2 /* UIColor+FlatColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors-prefix.pch"; sourceTree = "<group>"; };
+		FCBE029EAB0EF0B47A98A5F8FAB5132E /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-LightItalic.ttf"; path = "Fonts/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		FCDC922C92457E10A8217F9CA7305660 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "OpenSans-Semibold.ttf"; path = "Fonts/OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C6BA0F05E0A493487A020728C4F2FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3CE2308A6B5219DA2614184037E4BF /* CoreText.framework in Frameworks */,
+				6D9927CB01717CBBD14892EE89F4DEC2 /* Foundation.framework in Frameworks */,
+				2B8FD700DACE8AF6A3ED74717A78EEEC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C1A815BF4F110752F194ED38F652845 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A796E8EB73A6E879E57F7F52DB94172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A500991076F7B0821B11373024B7E3 /* Foundation.framework in Frameworks */,
+				B59893F6C67EE9CFA297B574041C37A6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34470C37B1DE2284087CDD72A0B804E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992BBE6C0A9B0E7F35F54B8A04F05B39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06321D6EB9E3F22F34067431A99A500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEDA3C3FD72FD53C03F699D044F505E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				774DD89477A654AC8E4B43436316C693 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F2F100CA6BA1498B099511718650EC4 /* OpenSans */ = {
+			isa = PBXGroup;
+			children = (
+				97B94EFC7123046E51EA97A4AE2AD366 /* UIFont+OpenSans.h */,
+				07CD48FCE02E1BAEFB8FB04A2BA3EF4B /* UIFont+OpenSans.m */,
+				D42ECD689251114BA478A74879DD6F68 /* Resources */,
+				180E6E0069CEE40A5D03B0C1A248CE29 /* Support Files */,
+			);
+			name = OpenSans;
+			path = OpenSans;
+			sourceTree = "<group>";
+		};
+		180E6E0069CEE40A5D03B0C1A248CE29 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC58FEE06CB416FA0D1EA3267F888EA3 /* OpenSans.modulemap */,
+				318B68AFC2527F596E00E04D01C089CA /* OpenSans-dummy.m */,
+				4479BEC900C16D8DA53CBA67852716EE /* OpenSans-Info.plist */,
+				7771A7A7DF1569282F993E9884DD36D2 /* OpenSans-prefix.pch */,
+				C5AFEE087580BE5FDBF29443C4B2F750 /* OpenSans-umbrella.h */,
+				167A533EDA3D4225D2FF02EE2DC2432D /* OpenSans.debug.xcconfig */,
+				6097E517FDB93C7919BAEED2EF4FA75C /* OpenSans.release.xcconfig */,
+				77BAB6169792F49FAF2FBC1E0B03CA15 /* ResourceBundle-OpenSans-OpenSans-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OpenSans";
+			sourceTree = "<group>";
+		};
+		1DB5740A9B90FD0207C3283BCFD42FDD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				028D42D8FF1F9BBE313F79950876A242 /* UIColor+FlatColors.modulemap */,
+				8C0D616296BACC14817051AFCB14CE91 /* UIColor+FlatColors-dummy.m */,
+				79CD2AEDAF551BE46E321E4E305F811B /* UIColor+FlatColors-Info.plist */,
+				F136BFE95CE3A9D3C49C590DA4EEC6C2 /* UIColor+FlatColors-prefix.pch */,
+				D7EE31FB60C345C43E4F84F5E5D4097D /* UIColor+FlatColors-umbrella.h */,
+				45E8AE014EF2541AFBEF79944E6A9942 /* UIColor+FlatColors.debug.xcconfig */,
+				9276E3F2A126FD37A541EA0057299335 /* UIColor+FlatColors.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor+FlatColors";
+			sourceTree = "<group>";
+		};
+		271317B707DF4AB1B6C75BEDD63277F5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0A28300C99F9AC417D8EE632BE9E6C3A /* UICollectionViewLeftAlignedLayout.m */,
+			);
+			name = Sources;
+			path = UICollectionViewLeftAlignedLayout/Sources;
+			sourceTree = "<group>";
+		};
+		491C5A56CCF59CA07A8D4E94687835F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F2F100CA6BA1498B099511718650EC4 /* OpenSans */,
+				9AFFACEB7DFC0E9A2E2EC15FFDD4BFF6 /* UIColor+FlatColors */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		73581073F11E328D54BC30916810FED7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D6E7249CBD3D2ADE67D9D67B42DD2F3A /* UICollectionViewLeftAlignedLayout.h */,
+			);
+			name = include;
+			path = UICollectionViewLeftAlignedLayout/include;
+			sourceTree = "<group>";
+		};
+		774DD89477A654AC8E4B43436316C693 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CFA76860B506E69F08B0B154D70C038E /* CoreText.framework */,
+				2DF26CFF1E862548F8E456C64372DC06 /* Foundation.framework */,
+				E74D207BDA239A25C1380A816F90FF59 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8A12327D38D5B3C5A350829C12255375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				150D15DADFFB2DDD2AAA62A205133DFC /* OpenSans */,
+				95244E634CD25D6FAFBE86E6504426B3 /* OpenSans-OpenSans */,
+				1F667CC0E19EAF34E5A4119E2121F585 /* Pods-Example */,
+				4A814427737E03EB24C323B10836E583 /* UICollectionViewLeftAlignedLayout */,
+				204756DB97637304E5F0FEA2A59CA9D8 /* UIColor+FlatColors */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AFFACEB7DFC0E9A2E2EC15FFDD4BFF6 /* UIColor+FlatColors */ = {
+			isa = PBXGroup;
+			children = (
+				3343193E1CCE05EE68EC191458664F7A /* UIColor+FlatColors.h */,
+				C87FC81E91D191769493B4BB50509AC8 /* UIColor+FlatColors.m */,
+				1DB5740A9B90FD0207C3283BCFD42FDD /* Support Files */,
+			);
+			name = "UIColor+FlatColors";
+			path = "UIColor+FlatColors";
+			sourceTree = "<group>";
+		};
+		9BDBD95ED116334D1B2835202D8D3060 /* Pods-Example */ = {
+			isa = PBXGroup;
+			children = (
+				35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */,
+				441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */,
+				EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */,
+				D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */,
+				AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */,
+				31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */,
+				7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */,
+				B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */,
+				243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */,
+			);
+			name = "Pods-Example";
+			path = "Target Support Files/Pods-Example";
+			sourceTree = "<group>";
+		};
+		B459131B72E15E173805E69833CA77C5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7699EC32BE707A0C1D7160423C8A3C9 /* UICollectionViewLeftAlignedLayout */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B7B2367CC59924DBF72B181228E88734 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABBAF89B448506E62EF0CFF7B8C9220F /* UICollectionViewLeftAlignedLayout.modulemap */,
+				9519BC21C948FBE1C4D6EFEE874DAA7F /* UICollectionViewLeftAlignedLayout-dummy.m */,
+				4994F5FA05C6ABC79006F620B33FEEAA /* UICollectionViewLeftAlignedLayout-Info.plist */,
+				A5B0FE368A3C93C1388234B3067EE4B9 /* UICollectionViewLeftAlignedLayout-prefix.pch */,
+				617C33C9228E0BB16E18587461DD10EF /* UICollectionViewLeftAlignedLayout-umbrella.h */,
+				C7FE671522D93C89BA2600CE6AB0364A /* UICollectionViewLeftAlignedLayout.debug.xcconfig */,
+				079CF76BC5BED2A91C4668153D9447BC /* UICollectionViewLeftAlignedLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Examples/CocoaPods/Pods/Target Support Files/UICollectionViewLeftAlignedLayout";
+			sourceTree = "<group>";
+		};
+		C7699EC32BE707A0C1D7160423C8A3C9 /* UICollectionViewLeftAlignedLayout */ = {
+			isa = PBXGroup;
+			children = (
+				73581073F11E328D54BC30916810FED7 /* include */,
+				DD0D88E5FA9D580DAD1C0B439607D5DC /* Pod */,
+				271317B707DF4AB1B6C75BEDD63277F5 /* Sources */,
+				B7B2367CC59924DBF72B181228E88734 /* Support Files */,
+			);
+			name = UICollectionViewLeftAlignedLayout;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		CE2E825F08D3AD0FD76E6D78D7512ED0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BDBD95ED116334D1B2835202D8D3060 /* Pods-Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B459131B72E15E173805E69833CA77C5 /* Development Pods */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				491C5A56CCF59CA07A8D4E94687835F9 /* Pods */,
+				8A12327D38D5B3C5A350829C12255375 /* Products */,
+				CE2E825F08D3AD0FD76E6D78D7512ED0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D42ECD689251114BA478A74879DD6F68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E979EB87466C60DEED35D88665D6B92 /* OpenSans-Bold.ttf */,
+				A89527F29A6A86C3969C63058CA99348 /* OpenSans-BoldItalic.ttf */,
+				571623CCF839D93A52DEB39450ABEE7E /* OpenSans-ExtraBold.ttf */,
+				B6298CFC8665A74BADA244ED9D759357 /* OpenSans-ExtraBoldItalic.ttf */,
+				9DFADE8C42D6E3C19FE8FDF5908DFECF /* OpenSans-Italic.ttf */,
+				5F24DBDACB87DB6FA4A4456C3D89E340 /* OpenSans-Light.ttf */,
+				FCBE029EAB0EF0B47A98A5F8FAB5132E /* OpenSans-LightItalic.ttf */,
+				BB100F774B5E3D21D1C9E8B06B40DDD2 /* OpenSans-Regular.ttf */,
+				FCDC922C92457E10A8217F9CA7305660 /* OpenSans-Semibold.ttf */,
+				E4C1F3BD6105EEBA056FC7BD6C894DEB /* OpenSans-SemiboldItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DD0D88E5FA9D580DAD1C0B439607D5DC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5BA17910AB55D5C494F126451142F52B /* LICENSE */,
+				66689B33AC591AAA4EC53B9B9330C22F /* README.md */,
+				6D67F592A69C5E39EA78F6292AE09A10 /* UICollectionViewLeftAlignedLayout.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A6E66055869F9C8A76BAB3DF20AB262 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAD0557DF8E0449EC779CBAC97B5BB9 /* UIColor+FlatColors.h in Headers */,
+				BB7541B9A900EDC6B2EE1EE7C6EB6BC6 /* UIColor+FlatColors-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DD600ADA6D33196A9554D45766207C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071DDC73DF7F0B807ADA66F16F3A96B5 /* Pods-Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B90E7228BDB58DC2CD0E47F0C7BB380F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5795B28F12D016A68532DBDB74151894 /* UICollectionViewLeftAlignedLayout.h in Headers */,
+				DE71C22B3B77718A4FAC198B6E835E0E /* UICollectionViewLeftAlignedLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0DA3D67A063BFBDD04ED607613DBADD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3484C679E38A7125DB3FF396245DCD02 /* OpenSans-umbrella.h in Headers */,
+				623F0EEF6B493FA2CC3444C6757AE532 /* UIFont+OpenSans.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09921880F42E4C0F5184DA13DBBE6A0 /* Build configuration list for PBXNativeTarget "Pods-Example" */;
+			buildPhases = (
+				2DD600ADA6D33196A9554D45766207C2 /* Headers */,
+				36C6D1E1A81EFB0F27E6074B37F5FD47 /* Sources */,
+				F06321D6EB9E3F22F34067431A99A500 /* Frameworks */,
+				D1697B0B40C3776000D4B1958FC02457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D3E63D590B99EDC7EDC642DB2574F49 /* PBXTargetDependency */,
+				87F8ACB629A9F429803B1C137048C64E /* PBXTargetDependency */,
+				39860CE0C32077677C925364A590F29B /* PBXTargetDependency */,
+			);
+			name = "Pods-Example";
+			productName = Pods_Example;
+			productReference = 1F667CC0E19EAF34E5A4119E2121F585 /* Pods-Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D2C062A8FB1A5905A7A79E46FB5EC44 /* OpenSans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1BF3770FE4E048297B1BAFE4D05163B /* Build configuration list for PBXNativeTarget "OpenSans" */;
+			buildPhases = (
+				E0DA3D67A063BFBDD04ED607613DBADD /* Headers */,
+				323B9CDB470A7664D33FFD33B9136B3A /* Sources */,
+				5C6BA0F05E0A493487A020728C4F2FAC /* Frameworks */,
+				51C7D37E6A440F03EBA0E607653833FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E69A05AC17A761DF9A74A832DBCF8936 /* PBXTargetDependency */,
+			);
+			name = OpenSans;
+			productName = OpenSans;
+			productReference = 150D15DADFFB2DDD2AAA62A205133DFC /* OpenSans */;
+			productType = "com.apple.product-type.framework";
+		};
+		866AA0434270D3C9C6572C4650E1A7A8 /* OpenSans-OpenSans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04919AF9D61145CA67E372DF8D4DAC83 /* Build configuration list for PBXNativeTarget "OpenSans-OpenSans" */;
+			buildPhases = (
+				89CA562F52198377756EC52BBDD52753 /* Sources */,
+				7C1A815BF4F110752F194ED38F652845 /* Frameworks */,
+				6353AED1D578F3B54A6AF5707F00957F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenSans-OpenSans";
+			productName = OpenSans;
+			productReference = 95244E634CD25D6FAFBE86E6504426B3 /* OpenSans-OpenSans */;
+			productType = "com.apple.product-type.bundle";
+		};
+		CC855F6CF68A0E53B44765DF68F5A1BB /* UICollectionViewLeftAlignedLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94CE3A8435DBC028DE42773A6CDC3557 /* Build configuration list for PBXNativeTarget "UICollectionViewLeftAlignedLayout" */;
+			buildPhases = (
+				B90E7228BDB58DC2CD0E47F0C7BB380F /* Headers */,
+				B9E555A78750B50428451BDE732FDA56 /* Sources */,
+				9A796E8EB73A6E879E57F7F52DB94172 /* Frameworks */,
+				C7170B711A1E6AA769A5787A3E5BDDE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICollectionViewLeftAlignedLayout;
+			productName = UICollectionViewLeftAlignedLayout;
+			productReference = 4A814427737E03EB24C323B10836E583 /* UICollectionViewLeftAlignedLayout */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBF5D92DF7C222FC14A9F2D2E3A1FECB /* UIColor+FlatColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2783AA410F8481B3B026192697AC118 /* Build configuration list for PBXNativeTarget "UIColor+FlatColors" */;
+			buildPhases = (
+				1A6E66055869F9C8A76BAB3DF20AB262 /* Headers */,
+				F98534A622AD1F8D6757869982C09BDA /* Sources */,
+				A34470C37B1DE2284087CDD72A0B804E /* Frameworks */,
+				518E8D74E674CC8A1CFCFBFA6C6CD54C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIColor+FlatColors";
+			productName = UIColor_FlatColors;
+			productReference = 204756DB97637304E5F0FEA2A59CA9D8 /* UIColor+FlatColors */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8A12327D38D5B3C5A350829C12255375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D2C062A8FB1A5905A7A79E46FB5EC44 /* OpenSans */,
+				866AA0434270D3C9C6572C4650E1A7A8 /* OpenSans-OpenSans */,
+				0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */,
+				CC855F6CF68A0E53B44765DF68F5A1BB /* UICollectionViewLeftAlignedLayout */,
+				DBF5D92DF7C222FC14A9F2D2E3A1FECB /* UIColor+FlatColors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		518E8D74E674CC8A1CFCFBFA6C6CD54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C7D37E6A440F03EBA0E607653833FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBEE0B0DC2AECE55F6AFF982B612E9D /* OpenSans-OpenSans in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6353AED1D578F3B54A6AF5707F00957F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE550D88EAC087B04AB7ED2429C9D367 /* OpenSans-Bold.ttf in Resources */,
+				7C0454C9C7A384C5F761961CD6C45827 /* OpenSans-BoldItalic.ttf in Resources */,
+				6C05A63DB53A81BB8A2DB99F8DB77944 /* OpenSans-ExtraBold.ttf in Resources */,
+				990BF31958AEDEF7089175C0E3354512 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				657E0BD0B34A889C34420FF45C6E1905 /* OpenSans-Italic.ttf in Resources */,
+				FB158041136A580A50F77F1ABC43EC52 /* OpenSans-Light.ttf in Resources */,
+				7FFB66B82589C1DD8AFAE0A3B2BCA90C /* OpenSans-LightItalic.ttf in Resources */,
+				9A31BF7EB81151E0DC6A1372FC5FE4DE /* OpenSans-Regular.ttf in Resources */,
+				EE8A28C7B7C938A9B32072DB99925E7C /* OpenSans-Semibold.ttf in Resources */,
+				9BD6DEB16AEBEB66FF8C154748A110E5 /* OpenSans-SemiboldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7170B711A1E6AA769A5787A3E5BDDE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1697B0B40C3776000D4B1958FC02457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		323B9CDB470A7664D33FFD33B9136B3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8DE09AAFC30F82063498CE0698F946F /* OpenSans-dummy.m in Sources */,
+				4C8B0624D371A190CE4B069C429C82EA /* UIFont+OpenSans.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C6D1E1A81EFB0F27E6074B37F5FD47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CB1080B796EDCA15994078393E6BCC /* Pods-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89CA562F52198377756EC52BBDD52753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9E555A78750B50428451BDE732FDA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94C4D4853A8E91DC1A614BFD9BB7D4A /* UICollectionViewLeftAlignedLayout.m in Sources */,
+				E7F5191B7F7120FB3AF97B2E3471FC59 /* UICollectionViewLeftAlignedLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98534A622AD1F8D6757869982C09BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B3EDFE1EF75734AB54463F6F91AEAE0 /* UIColor+FlatColors.m in Sources */,
+				62C1B16E0E6DEF7B40381B26B01A70AC /* UIColor+FlatColors-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39860CE0C32077677C925364A590F29B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor+FlatColors";
+			target = DBF5D92DF7C222FC14A9F2D2E3A1FECB /* UIColor+FlatColors */;
+			targetProxy = 8CC546101A4E046CCB7B79E5039A0648 /* PBXContainerItemProxy */;
+		};
+		5D3E63D590B99EDC7EDC642DB2574F49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenSans;
+			target = 5D2C062A8FB1A5905A7A79E46FB5EC44 /* OpenSans */;
+			targetProxy = 274FF763F1C0F55579A4501E0F96152A /* PBXContainerItemProxy */;
+		};
+		87F8ACB629A9F429803B1C137048C64E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICollectionViewLeftAlignedLayout;
+			target = CC855F6CF68A0E53B44765DF68F5A1BB /* UICollectionViewLeftAlignedLayout */;
+			targetProxy = 2EA216675343B90BE27458869A999E12 /* PBXContainerItemProxy */;
+		};
+		E69A05AC17A761DF9A74A832DBCF8936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OpenSans-OpenSans";
+			target = 866AA0434270D3C9C6572C4650E1A7A8 /* OpenSans-OpenSans */;
+			targetProxy = 95F090CBE402243A8D2C15FCD40CE307 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		039262128712FDE174512FF917C86C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079CF76BC5BED2A91C4668153D9447BC /* UICollectionViewLeftAlignedLayout.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICollectionViewLeftAlignedLayout/UICollectionViewLeftAlignedLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICollectionViewLeftAlignedLayout/UICollectionViewLeftAlignedLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICollectionViewLeftAlignedLayout/UICollectionViewLeftAlignedLayout.modulemap";
+				PRODUCT_MODULE_NAME = UICollectionViewLeftAlignedLayout;
+				PRODUCT_NAME = UICollectionViewLeftAlignedLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13D282D32CA3FE73E2F93394A1DBAEC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75790C59CDE5C810CF73AB45081C4CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6097E517FDB93C7919BAEED2EF4FA75C /* OpenSans.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OpenSans";
+				IBSC_MODULE = OpenSans;
+				INFOPLIST_FILE = "Target Support Files/OpenSans/ResourceBundle-OpenSans-OpenSans-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = OpenSans;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9204118A1E5AF8937F45825047A39600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6097E517FDB93C7919BAEED2EF4FA75C /* OpenSans.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OpenSans/OpenSans-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenSans/OpenSans-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpenSans/OpenSans.modulemap";
+				PRODUCT_MODULE_NAME = OpenSans;
+				PRODUCT_NAME = OpenSans;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB206E68CB14327BC58132A12AE7FF07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 167A533EDA3D4225D2FF02EE2DC2432D /* OpenSans.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OpenSans";
+				IBSC_MODULE = OpenSans;
+				INFOPLIST_FILE = "Target Support Files/OpenSans/ResourceBundle-OpenSans-OpenSans-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = OpenSans;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BAF55627BA9246AEE4D0160758381EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 167A533EDA3D4225D2FF02EE2DC2432D /* OpenSans.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OpenSans/OpenSans-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenSans/OpenSans-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpenSans/OpenSans.modulemap";
+				PRODUCT_MODULE_NAME = OpenSans;
+				PRODUCT_NAME = OpenSans;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C06A1D55DE240A2D2D816D6C357AFCE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FE671522D93C89BA2600CE6AB0364A /* UICollectionViewLeftAlignedLayout.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICollectionViewLeftAlignedLayout/UICollectionViewLeftAlignedLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICollectionViewLeftAlignedLayout/UICollectionViewLeftAlignedLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICollectionViewLeftAlignedLayout/UICollectionViewLeftAlignedLayout.modulemap";
+				PRODUCT_MODULE_NAME = UICollectionViewLeftAlignedLayout;
+				PRODUCT_NAME = UICollectionViewLeftAlignedLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8CCAA0FD978D84CAB7D1C3546B61286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECEAA3D91F9118936BA13285EE0EF4B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9276E3F2A126FD37A541EA0057299335 /* UIColor+FlatColors.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor+FlatColors/UIColor+FlatColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor+FlatColors/UIColor+FlatColors-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor+FlatColors/UIColor+FlatColors.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_FlatColors;
+				PRODUCT_NAME = UIColor_FlatColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAD57CCFC4B3ABB727F9FCEB70A1C8E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45E8AE014EF2541AFBEF79944E6A9942 /* UIColor+FlatColors.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor+FlatColors/UIColor+FlatColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor+FlatColors/UIColor+FlatColors-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor+FlatColors/UIColor+FlatColors.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_FlatColors;
+				PRODUCT_NAME = UIColor_FlatColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04919AF9D61145CA67E372DF8D4DAC83 /* Build configuration list for PBXNativeTarget "OpenSans-OpenSans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB206E68CB14327BC58132A12AE7FF07 /* Debug */,
+				75790C59CDE5C810CF73AB45081C4CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94CE3A8435DBC028DE42773A6CDC3557 /* Build configuration list for PBXNativeTarget "UICollectionViewLeftAlignedLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C06A1D55DE240A2D2D816D6C357AFCE1 /* Debug */,
+				039262128712FDE174512FF917C86C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1BF3770FE4E048297B1BAFE4D05163B /* Build configuration list for PBXNativeTarget "OpenSans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF55627BA9246AEE4D0160758381EA4 /* Debug */,
+				9204118A1E5AF8937F45825047A39600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09921880F42E4C0F5184DA13DBBE6A0 /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CCAA0FD978D84CAB7D1C3546B61286 /* Debug */,
+				13D282D32CA3FE73E2F93394A1DBAEC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2783AA410F8481B3B026192697AC118 /* Build configuration list for PBXNativeTarget "UIColor+FlatColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD57CCFC4B3ABB727F9FCEB70A1C8E2 /* Debug */,
+				ECEAA3D91F9118936BA13285EE0EF4B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
